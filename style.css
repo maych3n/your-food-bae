@@ -1,0 +1,183 @@
+.banner{
+    background-color: #FFDDDD;
+}
+.item1 { grid-area: banner; }
+.item2 { grid-area: info; }
+.item3 { grid-area: saved; }
+.item4 { grid-area: leftgenre; }
+.item5 { grid-area: rightgenre; }
+.item6 { grid-area: leftone; }
+.item7 { grid-area: lefttwo; }
+.item8 { grid-area: rightone; }
+.item9 { grid-area: righttwo; }
+.item10 { grid-area:footer; }
+
+body{
+    margin:0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'banner banner banner banner banner banner info saved'
+    'leftgenre leftgenre leftgenre leftgenre rightgenre rightgenre rightgenre rightgenre'
+    'leftone leftone lefttwo lefttwo rightone rightone righttwo righttwo'
+    'footer footer footer footer footer footer footer footer';
+  gap: 3px;
+  background-color: black;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 21.5px;
+  font-family: 'Miriam Libre', sans-serif;
+  
+}
+.item1{
+    height: 5vh;
+
+    background-color: #FFDDDD;
+    justify-content: space-evenly;
+}
+.item2{
+    height:5vh;
+
+    background-color: #FFDDDD;
+    justify-content: space-evenly;
+}
+.item3{
+    height:5vh;
+   
+    background-color: #FFDDDD;
+    justify-content: space-evenly;
+}
+.item4{
+    height:20vh;
+    background-color: #FFDDDD;
+}
+.item4:hover{
+    background-color: #FFB9C1;
+}
+.item5{
+    height:20vh;
+    background-color: #FFDDDD;
+}
+.item6{
+    height: 70vh;
+    width: 25vw;
+    background-color: #FEF3F3;
+}
+.item7{
+    width: 25vw;
+    height: 70vh;
+    background-color: #FEF3F3;
+}
+.item8{
+    width: 25vw;
+    height: 70vh;
+    background-color: #FEF3F3;
+}
+.item9{
+    width: 25vw;
+    height: 70vh;
+    background-color: #FEF3F3;
+}
+.item10{
+    height: 5vh;
+    background-color: #FFDDDD;
+
+}
+
+.phonenumber{
+    color: blue;
+    margin-top: 30px;
+
+}
+
+#left-basic-info{
+    font-size: 5vh;
+    margin-top: 20px;
+    font-weight: 800;
+}
+#right-basic-info{
+    font-size: 5vh;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+#left-restaurant-description{
+    margin-top: 30px;
+    font-size: 21pt;
+}
+#right-restaurant-description{
+    margin-top: 30px;
+    font-size: 21pt;
+}
+#left-restaurant-title{
+    font-size: 5vh;
+    font-weight: 800;
+}
+#right-restaurant-title{
+    font-size: 5vh;
+    font-weight: 800;
+}
+
+#spaghetti{
+ margin-top: 70px;
+ margin-bottom: 20px;
+ transform: rotate(-2deg);
+}
+#pizza{
+    margin-top: 100px;
+    margin-bottom: 20px;
+   }
+   
+#hearticon{
+    border: none;
+}
+#staricon{
+    padding-top: 50px;
+}
+
+
+button{
+    all:unset;
+    cursor: pointer;
+height:10vh;
+}
+
+
+.item4:hover{
+    background-color: #FFB9C1;
+}
+/* .item4:hover~#left-restaurant-title{
+    -webkit-box-shadow:0px 0px 10px 10px rgba(255,221,221,1);
+-moz-box-shadow: 0px 0px 10px 10px rgba(255,221,221,1);
+box-shadow: 0px 0px 10px 10px rgba(255,221,221,1);
+} */
+
+.item4:hover~.item6{
+    background-color: #FFDDDD;
+   }
+.item4:hover~.item7{
+    background-color: #FFDDDD;
+
+   }
+
+
+
+   .item5:hover{
+    background-color: #FFB9C1;
+}
+.item5:hover~.item8{
+    background-color: #FFDDDD;
+   }
+.item5:hover~.item9{
+    background-color: #FFDDDD;
+
+   }
+
+   #star{
+   top:50%
+   }

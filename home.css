@@ -1,0 +1,46 @@
+.banner{
+    background-color: #FFDDDD;
+}
+.item1 { grid-area: banner; }
+.item2 { grid-area: title; }
+.item3 { grid-area: footer; }
+
+body{
+    margin:0;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'banner '
+    'title'
+    'footer';
+  gap: 3px;
+  background-color: black;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 21.5px;
+  font-family: 'Miriam Libre', sans-serif;
+  
+}
+.item1{
+    height: 5vh;
+    background-color: #FFDDDD;
+    justify-content: space-evenly;
+}
+.item2{
+    height:90vh;
+    background-color: #FFDDDD;
+
+}
+.item3{
+    height:5vh;
+    background-color: #FFDDDD;
+    justify-content: space-evenly;
+}
+
+
